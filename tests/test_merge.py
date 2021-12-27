@@ -8,7 +8,7 @@ def test_merge():
     """
     merge function.
     """
-    from attrdict.merge import merge
+    from attrdict2.merge import merge
 
     left = {
         'baz': 'qux',

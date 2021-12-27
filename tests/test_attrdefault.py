@@ -9,7 +9,7 @@ def test_method_missing():
     """
     default values for AttrDefault
     """
-    from attrdict.default import AttrDefault
+    from attrdict2.default import AttrDefault
 
     default_none = AttrDefault()
     default_list = AttrDefault(list, sequence_type=None)
@@ -32,7 +32,7 @@ def test_repr():
     """
     repr(AttrDefault)
     """
-    from attrdict.default import AttrDefault
+    from attrdict2.default import AttrDefault
 
     assert_equals(repr(AttrDefault(None)), "AttrDefault(None, False, {})")
 

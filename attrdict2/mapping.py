@@ -5,7 +5,7 @@ from collections.abc import Mapping
 
 import six
 
-from attrdict.mixins import MutableAttr
+from attrdict2.mixins import MutableAttr
 
 
 __all__ = ['AttrMap']

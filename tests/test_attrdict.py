@@ -10,7 +10,7 @@ def test_init():
     """
     Create a new AttrDict.
     """
-    from attrdict.dictionary import AttrDict
+    from attrdict2.dictionary import AttrDict
 
     # empty
     assert_equals(AttrDict(), {})
@@ -57,7 +57,7 @@ def test_copy():
     """
     Make a dict copy of an AttrDict.
     """
-    from attrdict.dictionary import AttrDict
+    from attrdict2.dictionary import AttrDict
 
     mapping_a = AttrDict({'foo': {'bar': 'baz'}})
     mapping_b = mapping_a.copy()
@@ -73,7 +73,7 @@ def test_fromkeys():
     """
     make a new sequence from a set of keys.
     """
-    from attrdict.dictionary import AttrDict
+    from attrdict2.dictionary import AttrDict
 
     # default value
     assert_equals(AttrDict.fromkeys(()), {})
@@ -102,7 +102,7 @@ def test_repr():
     """
     repr(AttrDict)
     """
-    from attrdict.dictionary import AttrDict
+    from attrdict2.dictionary import AttrDict
 
     assert_equals(repr(AttrDict()), "AttrDict({})")
     assert_equals(repr(AttrDict({'foo': 'bar'})), "AttrDict({'foo': 'bar'})")
@@ -120,6 +120,6 @@ if not PY2:
         """
         The now-depricated has_keys method
         """
-        from attrdict.dictionary import AttrDict
+        from attrdict2.dictionary import AttrDict
 
         assert_false(hasattr(AttrDict(), 'has_key'))

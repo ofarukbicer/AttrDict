@@ -12,7 +12,7 @@ from nose.tools import (assert_equals, assert_not_equals,
                         assert_true, assert_false, assert_raises)
 import six
 
-from attrdict.mixins import Attr
+from attrdict2.mixins import Attr
 
 
 Options = namedtuple(
@@ -93,7 +93,7 @@ def test_attrmap():
     """
     Run AttrMap against the common tests.
     """
-    from attrdict.mapping import AttrMap
+    from attrdict2.mapping import AttrMap
 
     for test in common(AttrMap, mutable=True):
         yield test
@@ -103,7 +103,7 @@ def test_attrdict():
     """
     Run AttrDict against the common tests.
     """
-    from attrdict.dictionary import AttrDict
+    from attrdict2.dictionary import AttrDict
 
     view_methods = (2, 7) <= version_info < (3,)
 
@@ -126,7 +126,7 @@ def test_attrdefault():
     """
     Run AttrDefault against the common tests.
     """
-    from attrdict.default import AttrDefault
+    from attrdict2.default import AttrDefault
 
     def constructor(items=None, sequence_type=tuple):
         """
@@ -353,7 +353,7 @@ def iteration(options):
             assert_equals(frozenset(actual_items), expected_items)
 
             # What happens if mapping isn't a dict
-            from attrdict.mapping import AttrMap
+            from attrdict2.mapping import AttrMap
 
             mapping = options.constructor(AttrMap(raw))
 

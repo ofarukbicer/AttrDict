@@ -10,7 +10,7 @@ if PY2:
         """
         The now-depricated has_keys method
         """
-        from attrdict.dictionary import AttrDict
+        from attrdict2.dictionary import AttrDict
 
         mapping = AttrDict(
             {'foo': 'bar', frozenset((1, 2, 3)): 'abc', 1: 2}
