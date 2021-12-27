@@ -128,3 +128,5 @@ dmypy.json
 .pyre/
 
 bakalim.py
+
+attrdict2.egg-info/

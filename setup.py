@@ -6,25 +6,25 @@ To install AttrDict:
 from setuptools import setup
 
 
-DESCRIPTION = "A dict with attribute-style access"
-
-try:
-    LONG_DESCRIPTION = open('README.rst').read()
-except:
-    LONG_DESCRIPTION = DESCRIPTION
-
-
 setup(
-    name="attrdict2",
-    version="2.0.2",
-    author="Brendan Curran-Johnson",
-    author_email="brendan@bcjbcj.ca",
-    packages=("attrdict2",),
-    url="https://github.com/ofarukbicer/AttrDict",
-    license="MIT License",
-    description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
-    classifiers=(
+    author       = "ofarukbicer",
+    author_email = "omerfarukbicer0446@gmail.com",
+
+    packages     = ["attrdict2"],
+
+    name         = "attrdict2",
+    version      = "0.0.2",
+    url          = "https://github.com/ofarukbicer/AttrDict",
+    description  = "Siz uğraşmayın diye biz uğraştık.. ~ dızz 🐍",
+    keywords     = ["AttrDict", "KekikAkademi", "ofarukbicer", "keyiflerolsun"],
+
+    long_description_content_type   = "text/markdown",
+    long_description                = "".join(open("README.md", encoding="utf-8").readlines()),
+    include_package_data            = True,
+
+    license      = "MIT License",
+
+    classifiers  = (
         "Development Status :: 7 - Inactive",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
@@ -34,12 +34,11 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ),
-    install_requires=(
+    install_requires = (
         'six',
     ),
-    tests_require=(
+    tests_require    = (
         'nose>=1.0',
         'coverage',
     ),
-    zip_safe=True,
 )
