@@ -1,10 +1,6 @@
 ========
-AttrDict
+AttrDict2
 ========
-.. image:: https://travis-ci.org/ofarukbicer/AttrDict.svg?branch=master
-  :target: https://travis-ci.org/ofarukbicer/AttrDict?branch=master
-.. image:: https://coveralls.io/repos/ofarukbicer/AttrDict/badge.png?branch=master
-  :target: https://coveralls.io/r/ofarukbicer/AttrDict?branch=master
 
 AttrDict is an MIT-licensed library that provides mapping objects that allow
 their elements to be accessed both as keys and as attributes::
